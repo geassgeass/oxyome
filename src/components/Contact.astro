@@ -1,0 +1,123 @@
+---
+// Contact Component
+---
+
+<section id="contact" class="contact-section">
+    <div class="contact-container">
+        <h2 data-i18n="contact_title">Get in Touch</h2>
+        <p data-i18n="contact_subtitle">Have questions about integrating OxyOme into your residential or office space? Send us a message.</p>
+        
+        <form class="contact-form" onsubmit="event.preventDefault(); alert(localStorage.getItem('oxyome_lang') === 'fr' ? 'Message envoyé avec succès !' : 'Message sent successfully!');">
+            <div class="form-group">
+                <input type="text" data-i18n-placeholder="name_placeholder" placeholder="Your Name" required />
+            </div>
+            <div class="form-group">
+                <input type="email" data-i18n-placeholder="email_placeholder" placeholder="Your Email Address" required />
+            </div>
+            <div class="form-group">
+                <textarea rows="4" data-i18n-placeholder="msg_placeholder" placeholder="Your Message" required></textarea>
+            </div>
+            <button type="submit" class="btn-primary submit-btn" data-i18n="btn_send">Send Message</button>
+        </form>
+    </div>
+</section>
+
+<style>
+    .contact-section {
+        padding: 6rem 5%;
+        background: #f8fafc; /* Clean light background tint */
+        border-top: 1px solid #e2e8f0;
+    }
+
+    .contact-container {
+        max-width: 600px;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .contact-container h2 {
+        font-size: 2.25rem;
+        color: #0f172a; /* Deep slate */
+        margin-bottom: 0.5rem;
+        font-weight: 800;
+    }
+
+    .contact-container p {
+        color: #475569; /* Slate 600 */
+        margin-bottom: 2.5rem;
+        font-size: 0.95rem;
+    }
+
+    .contact-form {
+        display: flex;
+        flex-direction: column;
+        gap: 1.25rem;
+        text-align: left;
+    }
+
+    .form-group input, .form-group textarea {
+        width: 100%;
+        background: #ffffff; /* Crisp white input fields */
+        border: 1px solid #cbd5e1; /* Clean visible border */
+        padding: 1rem;
+        border-radius: 10px;
+        color: #0f172a; /* Dark text typed by user */
+        font-family: inherit;
+        box-sizing: border-box;
+        font-size: 0.9rem;
+        transition: all 0.2s;
+        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.02);
+    }
+
+    .form-group input::placeholder, .form-group textarea::placeholder {
+        color: #94a3b8; /* Readable placeholder color */
+    }
+
+    .form-group input:focus, .form-group textarea:focus {
+        outline: none;
+        border-color: #0284c7; /* Vibrant tech blue focus state */
+        box-shadow: 0 0 0 3px rgba(2, 132, 199, 0.1);
+    }
+
+    .submit-btn {
+        width: 100%;
+        padding: 1rem;
+        font-size: 0.95rem;
+    }
+
+    .btn-primary {
+        background: #0284c7; /* Clean tech blue action button */
+        color: #ffffff;
+        padding: 0.75rem 1.75rem;
+        border-radius: 10px;
+        font-weight: 700;
+        text-decoration: none;
+        transition: all 0.2s;
+        border: none;
+        cursor: pointer;
+        font-size: 0.85rem;
+        text-align: center;
+        box-shadow: 0 4px 12px rgba(2, 132, 199, 0.2);
+    }
+
+    .btn-primary:hover {
+        background: #0369a1;
+        transform: translateY(-1px);
+    }
+
+    .btn-secondary {
+        background: #ffffff;
+        color: #0f172a;
+        padding: 0.75rem 1.75rem;
+        border-radius: 10px;
+        font-weight: 700;
+        text-decoration: none;
+        border: 1px solid #cbd5e1;
+        transition: all 0.2s;
+        font-size: 0.85rem;
+    }
+
+    .btn-secondary:hover {
+        background: #f1f5f9;
+    }
+</style>

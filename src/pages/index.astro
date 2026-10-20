@@ -1,0 +1,72 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Navbar from '../components/Navbar.astro';
+import Hero from '../components/Hero.astro';
+import SleepPitch from '../components/SleepPitch.astro'; 
+import StudyPitch from '../components/StudyPitch.astro';
+import Features from '../components/Features.astro';
+import Contact from '../components/Contact.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<Layout>
+    <!-- Navigation Bar -->
+    <Navbar />
+    
+    <!-- Hero Section -->
+    <Hero />
+
+	<!-- Features Section -->
+    <Features />
+
+	<!-- Pitch Section -->
+	<SleepPitch />
+	<StudyPitch />
+    
+
+    <!-- Contact Section -->
+    <Contact />
+
+    <!-- Footer Section -->
+    <Footer />
+
+    <!-- Import isolated translation logic script -->
+    <script src="../scripts/i18n.js"></script>
+
+    <style>
+        body {
+            background-color: #f8fafc; /* Clean, crisp off-white */
+            color: #0f172a;            /* Dark slate for readable text */
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        /* Responsive Layout Adjustments */
+        @media (max-width: 768px) {
+            .hero-content h1 {
+                font-size: 2.4rem;
+            }
+            .hero-cta {
+                flex-direction: column;
+                width: 100%;
+            }
+            .hero-cta a {
+                width: 100%;
+                box-sizing: border-box;
+            }
+            .image-bezel {
+                padding: 8px;
+                border-radius: 14px;
+            }
+            .showcase-img {
+                border-radius: 8px;
+            }
+            .nav-links-centered {
+                display: none; /* Can be handled via a mobile drawer if needed */
+            }
+        }
+    </style>
+</Layout>

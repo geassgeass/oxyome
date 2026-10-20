@@ -1,0 +1,119 @@
+---
+// Features Component - Updated with Golden Icons
+---
+
+<section id="features" class="features-section">
+    <div class="section-title">
+        <h2 data-i18n="features_title">Unified Air Intelligence</h2>
+        <p data-i18n="features_subtitle">Built with the clean aesthetic and reliable telemetry you expect from modern smart home monitoring.</p>
+    </div>
+
+    <div class="features-grid">
+        <!-- Feature 1: Room Health -->
+        <div class="feature-card">
+            <div class="feature-icon-badge">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"></path></svg>
+            </div>
+            <h3 data-i18n="feat_1_title">Room Health Scores</h3>
+            <p data-i18n="feat_1_desc">Instantly evaluate overall environment ratings ranging from excellent to critical based on aggregated local metrics.</p>
+        </div>
+
+        <!-- Feature 2: CO2 -->
+        <div class="feature-card">
+            <div class="feature-icon-badge">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9.59 4.59A2 2 0 1 1 11 8H2m10.59 11.41A2 2 0 1 0 14 16H2m15.73-8.27A2.5 2.5 0 1 1 19 12H2"></path></svg>
+            </div>
+            <h3 data-i18n="feat_2_title">CO₂ & Ventilation Tracking</h3>
+            <p data-i18n="feat_2_desc">Track carbon dioxide levels down to the individual ppm to ensure your living spaces stay fresh and clear of stale air.</p>
+        </div>
+
+        <!-- Feature 3: Particulates -->
+        <div class="feature-card">
+            <div class="feature-icon-badge">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+            </div>
+            <h3 data-i18n="feat_3_title">Particulate Defense</h3>
+            <p data-i18n="feat_3_desc">Keep a close watch on PM<sub>2.5</sub> counts to guarantee microscopic pollutants are kept completely at bay.</p>
+        </div>
+    </div>
+</section>
+
+<style>
+    .features-section {
+        padding: 6rem 5%;
+        max-width: 1200px;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .section-title h2 {
+        font-size: 2.25rem;
+        color: #0f172a;
+        margin-bottom: 0.5rem;
+        font-weight: 800;
+    }
+
+    .section-title p {
+        color: #475569;
+        margin-bottom: 3.5rem;
+        font-size: 1rem;
+    }
+
+    .features-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+        gap: 2rem;
+        text-align: left;
+    }
+
+    .feature-card {
+        background: #ffffff;
+        border: 1px solid #e2e8f0;
+        padding: 2.25rem;
+        border-radius: 18px;
+        transition: all 0.2s ease;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.02), 0 2px 4px -1px rgba(0, 0, 0, 0.01);
+    }
+
+    .feature-card:hover {
+        transform: translateY(-4px);
+        border-color: #d9a520; /* Updated hover border to golden */
+        box-shadow: 0 12px 20px -3px rgba(0, 0, 0, 0.06);
+    }
+
+    /* --- UPDATED ICON BADGE STYLE --- */
+    .feature-icon-badge {
+        width: 48px;
+        height: 48px;
+        /* Warm golden background matching particles */
+        background: rgba(217, 165, 32, 0.1); 
+        /* Matching golden border with slight transparency */
+        border: 1px solid rgba(217, 165, 32, 0.3);
+        border-radius: 12px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 1.25rem;
+        /* Solid golden icon color */
+        color: #d9a520; 
+    }
+    /* -------------------------------- */
+
+    .feature-card h3 {
+        color: #0f172a;
+        font-size: 1.15rem;
+        margin-bottom: 0.75rem;
+        font-weight: 700;
+    }
+
+    .feature-card p {
+        color: #475569;
+        font-size: 0.95rem;
+        line-height: 1.6;
+        margin: 0;
+    }
+</style>

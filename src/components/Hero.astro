@@ -1,0 +1,199 @@
+---
+// Hero Component
+---
+
+<header class="hero-section">
+    <div class="hero-content">
+        <div class="badge-pill">
+            <span class="dot-live"></span> <span data-i18n="hero_badge">REAL-TIME TELEMETRY</span>
+        </div>
+        <h1 data-i18n="hero_title">Intelligent Air Quality Tracking</h1>
+        <p class="hero-description" data-i18n="hero_desc">
+            Designed to mirror your room-by-room environmental setup. Monitor CO₂ freshness, fine particulates (PM<sub>2.5</sub>), temperature, and humidity with precision glassmorphic dashboards.
+        </p>
+        <div class="hero-cta">
+            <a href="#features" class="btn-primary" data-i18n="btn_explore">Explore Features</a>
+            <a href="#contact" class="btn-secondary" data-i18n="btn_contact">Get in Touch</a>
+        </div>
+    </div>
+
+    <!-- Apple-Style Bezeled Image Showcase -->
+    <div class="hero-image-showcase">
+        <div class="showcase-glow"></div>
+        <div class="image-bezel">
+            <img src="/SSS2.png" alt="OxyOme System Dashboard" class="showcase-img" />
+        </div>
+    </div>
+</header>
+
+<style>
+    .hero-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 5rem 5% 4rem;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .hero-content {
+        max-width: 750px;
+        margin-bottom: 3.5rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .badge-pill {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+        background: rgba(13, 148, 136, 0.1);
+        color: #0d9488; /* Darker teal for light backgrounds */
+        padding: 0.35rem 0.85rem;
+        border-radius: 20px;
+        font-size: 0.7rem;
+        font-weight: 700;
+        letter-spacing: 1.5px;
+        margin-bottom: 1.25rem;
+        border: 1px solid rgba(13, 148, 136, 0.2);
+    }
+
+    .dot-live {
+        width: 6px;
+        height: 6px;
+        background: #0d9488;
+        border-radius: 50%;
+        box-shadow: 0 0 8px rgba(13, 148, 136, 0.4);
+        animation: pulse 2s infinite;
+    }
+
+    @keyframes pulse {
+        0% { opacity: 1; }
+        50% { opacity: 0.4; }
+        100% { opacity: 1; }
+    }
+
+    .hero-content h1 {
+        font-size: 3.2rem;
+        font-weight: 800;
+        color: #0f172a; /* Deep slate instead of white */
+        margin: 0 0 1.25rem 0;
+        line-height: 1.1;
+        letter-spacing: -0.03em;
+    }
+
+    .hero-description {
+        font-size: 1.05rem;
+        color: #475569; /* Slate 600 for high readability on white */
+        line-height: 1.6;
+        margin-bottom: 2rem;
+        font-weight: 400;
+    }
+
+    .hero-cta {
+        display: flex;
+        gap: 1rem;
+        justify-content: center;
+    }
+
+    .btn-primary {
+        background: #0284c7; /* Clean tech blue or keep warm amber */
+        color: #ffffff;
+        padding: 0.75rem 1.75rem;
+        border-radius: 10px;
+        font-weight: 700;
+        text-decoration: none;
+        transition: all 0.2s;
+        border: none;
+        cursor: pointer;
+        font-size: 0.85rem;
+        text-align: center;
+        box-shadow: 0 4px 12px rgba(2, 132, 199, 0.2);
+    }
+
+    .btn-primary:hover {
+        background: #0369a1;
+        transform: translateY(-1px);
+    }
+
+    .btn-secondary {
+        background: #ffffff;
+        color: #0f172a;
+        padding: 0.75rem 1.75rem;
+        border-radius: 10px;
+        font-weight: 700;
+        text-decoration: none;
+        border: 1px solid #cbd5e1; /* Clean border */
+        transition: all 0.2s;
+        font-size: 0.85rem;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.02);
+    }
+
+    .btn-secondary:hover {
+        background: #f8fafc;
+        border-color: #94a3b8;
+    }
+
+    .hero-image-showcase {
+        position: relative;
+        width: 100%;
+        max-width: 960px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* Light Mode Bezel / Card Style */
+    .image-bezel {
+        width: 100%;
+        background: rgba(255, 255, 255, 0.85);
+        border: 1px solid rgba(226, 232, 240, 0.9);
+        border-radius: 20px;
+        padding: 12px;
+        box-shadow: 0 20px 40px rgba(15, 23, 42, 0.08), 0 0 40px rgba(14, 165, 233, 0.05);
+        backdrop-filter: blur(10px);
+        box-sizing: border-box;
+    }
+
+    .showcase-img {
+        width: 100%;
+        height: auto;
+        display: block;
+        border-radius: 12px;
+    }
+
+    .showcase-glow {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 80%;
+        height: 80%;
+        background: radial-gradient(circle, rgba(14, 165, 233, 0.1) 0%, rgba(255, 255, 255, 0) 70%);
+        z-index: -1;
+        pointer-events: none;
+    }
+
+    @media (max-width: 768px) {
+        .hero-content h1 {
+            font-size: 2.4rem;
+        }
+        .hero-cta {
+            flex-direction: column;
+            width: 100%;
+        }
+        .hero-cta a {
+            width: 100%;
+            box-sizing: border-box;
+        }
+        .image-bezel {
+            padding: 8px;
+            border-radius: 14px;
+        }
+        .showcase-img {
+            border-radius: 8px;
+        }
+    }
+</style>

@@ -1,0 +1,170 @@
+<section class="study-pitch-section">
+    <div class="study-container">
+        <!-- Left Side: High-End Lifestyle Visual Showcase -->
+        <div class="study-image-wrapper">
+            <div class="image-bezel">
+                <!-- Replace src with your actual focused study image -->
+                <img 
+                    src="/kid_studying_2np.jpg" 
+                    alt="Focused student studying with clean air monitor visible" 
+                    class="study-img"
+                />
+            </div>
+        </div>
+
+        <!-- Right Side: Copy & Bullet Points Focused Exclusively on Focus -->
+        <div class="study-content">
+            
+            <h2>Uninterrupted Focus</h2>
+            <p class="study-lead">
+                Stale air is the silent killer of concentration. As study sessions run long, CO₂ levels quietly rise, causing cognitive fatigue. OxyOme keeps your environment crisp, helping you maintain peak mental clarity.
+            </p>
+
+            <ul class="benefit-list">
+                <li>
+                    <div class="benefit-icon">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12.01" y2="8"></line><line x1="12" y1="16" x2="12" y2="12"></line></svg>
+                    </div>
+                    <div>
+                        <strong>Cognitive CO₂ Thresholds</strong>
+                        <span>Monitor rising carbon dioxide levels that lead to brain fog and drowsiness, ensuring your study space stays ventilated for alertness.</span>
+                    </div>
+                </li>
+                <li>
+                    <div class="benefit-icon">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                    </div>
+                    <div>
+                        <strong>Particulate-Free Clarity</strong>
+                        <span>Defend against fine dust ($PM_{2.5}$) accumulation which strains the body, allowing you to dedicate full mental energy to the task at hand.</span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<style>
+    .study-pitch-section {
+        padding: 6rem 2rem;
+        max-width: 1200px;
+        margin: 0 auto;
+        background-color: #fbfcfd; /* Very subtle off-white to differentiate sections */
+        border-radius: 30px;
+        margin-bottom: 4rem;
+    }
+
+    .study-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 4rem;
+        align-items: center; /* Keeps text vertically centered with the image */
+    }
+
+    /* Left Side: Image Styling (Flipped from Sleep Pitch) */
+    .study-image-wrapper {
+        position: relative;
+    }
+
+    .image-bezel {
+        background: #ffffff;
+        padding: 12px;
+        border-radius: 24px;
+        border: 1px solid #e2e8f0;
+        box-shadow: 0 20px 40px -15px rgba(0, 0, 0, 0.08);
+    }
+
+    .study-img {
+        width: 100%;
+        height: auto;
+        display: block;
+        border-radius: 14px;
+        object-fit: cover;
+        max-height: 450px;
+    }
+
+    /* Right Side: Text Styling (Matching Golden Aesthetic) */
+    .badge-pill {
+        display: inline-block;
+        font-size: 0.7rem;
+        font-weight: 700;
+        letter-spacing: 2px;
+        color: #d9a520; /* Golden Accent */
+        background: rgba(217, 165, 32, 0.08);
+        border: 1px solid rgba(217, 165, 32, 0.25);
+        padding: 0.35rem 0.75rem;
+        border-radius: 20px;
+        margin-bottom: 1rem;
+    }
+
+    .study-content h2 {
+        font-family: var(--font-heading); /* Playfair Display */
+        font-size: 2.5rem;
+        color: #0f172a;
+        margin-top: 0;
+        margin-bottom: 1.5rem;
+        line-height: 1.15;
+    }
+
+    .study-lead {
+        color: #475569;
+        font-size: 1.05rem;
+        line-height: 1.6;
+        margin-bottom: 2.25rem;
+    }
+
+    .benefit-list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    .benefit-list li {
+        display: flex;
+        gap: 1rem;
+        align-items: flex-start;
+    }
+
+    .benefit-icon {
+        background: rgba(217, 165, 32, 0.1); /* Golden background */
+        width: 40px;
+        height: 40px;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+        border: 1px solid rgba(217, 165, 32, 0.25);
+        color: #d9a520; /* Golden icon color */
+    }
+
+    .benefit-list strong {
+        display: block;
+        color: #0f172a;
+        font-size: 1rem;
+        margin-bottom: 0.2rem;
+    }
+
+    .benefit-list span {
+        color: #64748b;
+        font-size: 0.92rem;
+        line-height: 1.5;
+    }
+
+    /* Responsive Adjustment */
+    @media (max-width: 900px) {
+        .study-container {
+            grid-template-columns: 1fr;
+            gap: 2.5rem;
+        }
+        .study-content {
+            text-align: center; /* Center text on mobile */
+        }
+        .benefit-list li {
+            text-align: left; /* Keep list items left-aligned for readability */
+        }
+    }
+</style>

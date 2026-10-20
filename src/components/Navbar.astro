@@ -1,0 +1,142 @@
+<nav class="navbar">
+    <div class="nav-brand-left">
+        <div class="logo-mark">
+            <!-- Sleeker, Minimalist Vector Leaf Icon -->
+            <svg class="logo-leaf-svg" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M20 4C20 4 14 4 9 9C4 14 4 20 4 20C4 20 10 20 15 15C20 10 20 4 20 4Z" fill="url(#leaf-gradient)" stroke="#0284c7" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M4 20L11 13" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round"/>
+                <defs>
+                    <linearGradient id="leaf-gradient" x1="4" y1="20" x2="20" y2="4" gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#0284c7"/>
+                        <stop offset="1" stop-color="#38bdf8"/>
+                    </linearGradient>
+                </defs>
+            </svg>
+        </div>
+        <div class="brand-text">
+            <span class="brand-title">OxyOme</span>
+            <span class="brand-subtitle" data-i18n="brand_subtitle">BETTER AIR &bull; BETTER LIFE</span>
+        </div>
+    </div>
+        
+    <div class="nav-links-centered">
+        <a href="/" class="active" data-i18n="nav_home">HOME</a>
+        <a href="#features" data-i18n="nav_features">FEATURES</a>
+        <a href="#contact" data-i18n="nav_contact">CONTACT</a>
+    </div>
+
+    <div class="nav-actions">
+        <button id="lang-toggle" class="lang-btn" aria-label="Switch Language">FR</button>
+    </div>
+</nav>
+
+<style>
+    .navbar {
+        display: grid;
+        grid-template-columns: 1fr auto 1fr;
+        align-items: center;
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 1.5rem 2rem;
+        box-sizing: border-box;
+    }
+
+    .nav-brand-left {
+        display: flex;
+        align-items: center;
+        gap: 1.1rem;
+        justify-self: start;
+    }
+
+    .logo-mark {
+        width: 48px;
+        height: 48px;
+        background: linear-gradient(135deg, rgba(56, 189, 248, 0.12), rgba(2, 132, 199, 0.18));
+        border: 1.5px solid rgba(14, 165, 233, 0.3);
+        border-radius: 14px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0 6px 16px rgba(2, 132, 199, 0.12);
+    }
+
+    .logo-leaf-svg {
+        width: 26px;
+        height: 26px;
+    }
+
+    .brand-text {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .brand-title {
+        font-family: var(--font-heading);
+        font-weight: 700;
+        font-size: 1.85rem; /* Larger, prominent brand name */
+        letter-spacing: -0.02em;
+        color: #0f172a;
+        line-height: 1;
+    }
+
+    .brand-subtitle {
+        font-size: 0.65rem; /* Larger, legible slogan */
+        letter-spacing: 3px;
+        color: #475569;
+        font-weight: 700;
+        margin-top: 5px;
+    }
+
+    .nav-links-centered {
+        display: flex;
+        gap: 2rem;
+        align-items: center;
+        justify-self: center;
+    }
+
+    .nav-links-centered a {
+        color: #475569;
+        text-decoration: none;
+        font-size: 0.8rem;
+        letter-spacing: 1.5px;
+        font-weight: 600;
+        transition: color 0.2s;
+    }
+
+    .nav-links-centered a:hover, 
+    .nav-links-centered a.active {
+        color: #0284c7;
+    }
+
+    .nav-actions {
+        display: flex;
+        align-items: center;
+        justify-self: end;
+    }
+
+    .lang-btn {
+        background: rgba(14, 165, 233, 0.08);
+        color: #0284c7;
+        border: 1px solid rgba(14, 165, 233, 0.2);
+        padding: 0.4rem 0.75rem;
+        border-radius: 6px;
+        font-size: 0.75rem;
+        font-weight: 700;
+        letter-spacing: 1px;
+        cursor: pointer;
+        transition: all 0.2s ease;
+    }
+
+    .lang-btn:hover {
+        background: rgba(14, 165, 233, 0.15);
+        border-color: #0284c7;
+    }
+
+    @media (max-width: 768px) {
+        .nav-links-centered {
+            display: none; 
+        }
+    }
+</style>

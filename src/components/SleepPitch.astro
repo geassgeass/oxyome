@@ -1,0 +1,153 @@
+<section class="lifestyle-pitch-section">
+    <div class="lifestyle-container">
+        <!-- Left Side: Copy & Bullet Points Focused Exclusively on Sleep -->
+        <div class="lifestyle-content">
+            <h2>Deep, Restorative Sleep</h2>
+            <p class="lifestyle-lead">
+                As bedtime doors close, bedroom air changes quietly through the night. OxyOme tracks nocturnal CO₂ buildup and fine particulates so your children wake up genuinely refreshed.
+            </p>
+
+            <ul class="benefit-list">
+                <li>
+                    <div class="benefit-icon">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+                    </div>
+                    <div>
+                        <strong>Nocturnal CO₂ Monitoring</strong>
+                        <span>Track overnight ventilation shifts in children's bedrooms to eliminate morning grogginess and ensure deep sleep cycles.</span>
+                    </div>
+                </li>
+                <li>
+                    <div class="benefit-icon">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+                    </div>
+                    <div>
+                        <strong>Fine Particulate (PM<sub>2.5</sub>) Defense</strong>
+                        <span>Keep a vigilant watch on microscopic dust and irritants, protecting delicate airways for smooth, uninterrupted breathing all night.</span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Right Side: High-End Lifestyle Visual Showcase -->
+        <div class="lifestyle-image-wrapper">
+            <div class="image-bezel">
+                <img 
+                    src="/kid_sleeping_1.jpg" 
+                    alt="Serene child sleeping peacefully with optimal bedroom air monitoring" 
+                    class="lifestyle-img"
+                />
+            </div>
+        </div>
+    </div>
+</section>
+
+<style>
+    .lifestyle-pitch-section {
+        padding: 6rem 2rem;
+        max-width: 1200px;
+        margin: 0 auto;
+        /* --- FIX ADDED HERE --- */
+        background-color: #ffffff; /* Solid background blocks particles from bleeding through */
+        position: relative;
+        z-index: 2; /* Ensures this section sits cleanly above the particle canvas */
+        border-radius: 30px; /* Optional: matches the smooth look of your study section */
+        margin-bottom: 4rem;
+        /* ---------------------- */
+    }
+
+    .lifestyle-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 4rem;
+        align-items: flex-start; /* Aligns the top of the text column flush with the top of the image */
+    }
+
+    .lifestyle-content h2 {
+        font-family: var(--font-heading);
+        font-size: 2.5rem;
+        color: #0f172a;
+        margin-top: 0;          /* Ensures no extra spacing pushes the title down */
+        margin-bottom: 1.75rem;   /* Increased vertical space between title and paragraph */
+        line-height: 1.15;
+    }
+
+    .lifestyle-lead {
+        color: #475569;
+        font-size: 1.05rem;
+        line-height: 1.6;
+        margin-bottom: 2.25rem; /* Increased vertical space before the benefit list */
+    }
+
+    .benefit-list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    .benefit-list li {
+        display: flex;
+        gap: 1rem;
+        align-items: flex-start;
+    }
+
+    .benefit-icon {
+        background: rgba(217, 165, 32, 0.1); 
+        width: 40px;
+        height: 40px;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+        border: 1px solid rgba(217, 165, 32, 0.25);
+        color: #d9a520; 
+    }
+
+    .benefit-list strong {
+        display: block;
+        color: #0f172a;
+        font-size: 1rem;
+        margin-bottom: 0.2rem;
+    }
+
+    .benefit-list span {
+        color: #64748b;
+        font-size: 0.92rem;
+        line-height: 1.5;
+    }
+
+    /* Image Bezel & Framing */
+    .lifestyle-image-wrapper {
+        position: relative;
+    }
+
+    .image-bezel {
+        background: #ffffff;
+        padding: 12px;
+        border-radius: 24px;
+        border: 1px solid #e2e8f0;
+        box-shadow: 0 20px 40px -15px rgba(0, 0, 0, 0.08);
+        position: relative;
+        overflow: hidden;
+    }
+
+    .lifestyle-img {
+        width: 100%;
+        height: auto;
+        display: block;
+        border-radius: 14px;
+        object-fit: cover;
+        max-height: 450px;
+    }
+
+    @media (max-width: 900px) {
+        .lifestyle-container {
+            grid-template-columns: 1fr;
+            gap: 2.5rem;
+        }
+    }
+</style>
